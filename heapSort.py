@@ -26,7 +26,6 @@ def maxHeapify(A, i, length):
 def heapSort(A):
     buildMaxHeap(A)
     length = len(A)
-    #does the call to switcharoo increase runtime?
     for i in range(len(A)-1, 0, -1):
         switchaRoo(A, 0, i)
         length -= 1
